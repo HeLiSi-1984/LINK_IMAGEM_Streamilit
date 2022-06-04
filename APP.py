@@ -3,18 +3,24 @@ import streamlit as st
 
 
 def main():
-    st.title("SITE PARA ANÁLISE DE JOGOS DE FUTEBOL")
-    st.success('Para mercado de cantos e gols, ⬇️Só aqui você é green . ⬇️')
+    st.title('SITE PALPITES PARA APOSTAS ESPORTIVA')
+    '''_____________________________________________'''
+    st.success('Venha conferir nosso novo App para análise de jogos de futebol, para mercado de cantos e gol. ⬇️'
+               'SÓ AQUI VOCÊ É GREEN! ACESSO DO LINK ABAIXO  ⬇️')
     L_imagem = 'https://i.postimg.cc/bvSWpw7S/HELISI-Bet-Bot.png'
     L_site = 'https://bit.ly/3t24BpR'
 
-    ''' __Link com imagem ____________________'''
-    st.markdown(f'''<p> CLIQUE AQUI ---> <a href="{L_site}"><img src="{L_imagem}" widht="400" height="250"></p>''', unsafe_allow_html=True)
+
+
+    '''___Link com imagens _________________________________________________'''
+    st.markdown(
+        f'''<h3> CLIQUE AQUI ---> <a href="{L_site}"><img src="{L_imagem}" 
+        width="800" height="400" "></h3>''', unsafe_allow_html=True)
 
 
     '''__Passado como um letreiro ___________________________________________'''
     st.markdown(
-        f'''<h3><MARQUEE BEHAVIOR="alternate" DIRECTION="RIGHT" scrollamount="10" BGCOLOR="green" WIDTH=100% >
+        f'''<h3><MARQUEE BEHAVIOR="alternate" DIRECTION="RIGHT" scrollamount="10" BGCOLOR="BLACK" WIDTH=100% >
          <a href="{L_site}"><img src="{L_imagem}" width="300" height="270" "></MARQUEE></h3>''',
         unsafe_allow_html=True)
 
@@ -25,6 +31,9 @@ def main():
     <marquee behavior="alternate"><a href="{L_site}"><img src="{L_imagem}" width="500" height="300" ">''',
      unsafe_allow_html=True)
 
+
 if __name__ == '__main__':
-    st.set_page_config(page_title= 'Image link', layout="wide")
+    st.set_page_config(page_title='IMAGE LINK',layout='wide')
     main()
+
+#Tchau brigadu!!
